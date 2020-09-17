@@ -1,4 +1,4 @@
-package th.in.codex.spring.demo_02_blog;
+package th.in.codex.demo.blog;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

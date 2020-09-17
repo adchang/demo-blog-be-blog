@@ -1,4 +1,4 @@
-package th.in.codex.spring.demo_02_blog.controller;
+package th.in.codex.demo.blog.controller;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
@@ -7,8 +7,8 @@ import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.server.RepresentationModelAssembler;
 import org.springframework.stereotype.Component;
 
-import th.in.codex.spring.demo_02_blog.model.BlogEntry;
-import th.in.codex.spring.demo_02_blog.model.BlogEntryStatus;
+import th.in.codex.demo.blog.model.BlogEntry;
+import th.in.codex.demo.blog.model.BlogEntryStatus;
 
 @Component
 public class BlogEntryModelAssembler implements RepresentationModelAssembler<BlogEntry, EntityModel<BlogEntry>> {

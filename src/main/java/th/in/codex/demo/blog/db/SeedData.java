@@ -1,4 +1,4 @@
-package th.in.codex.spring.demo_02_blog.db;
+package th.in.codex.demo.blog.db;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -6,9 +6,9 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import th.in.codex.spring.demo_02_blog.dao.BlogEntryDao;
-import th.in.codex.spring.demo_02_blog.model.BlogEntry;
-import th.in.codex.spring.demo_02_blog.model.BlogEntryStatus;
+import th.in.codex.demo.blog.dao.BlogEntryDao;
+import th.in.codex.demo.blog.model.BlogEntry;
+import th.in.codex.demo.blog.model.BlogEntryStatus;
 
 @Configuration
 public class SeedData {
