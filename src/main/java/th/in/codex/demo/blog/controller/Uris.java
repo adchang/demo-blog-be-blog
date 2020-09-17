@@ -1,4 +1,4 @@
-package th.in.codex.spring.demo_02_blog.controller;
+package th.in.codex.demo.blog.controller;
 
 public class Uris {
 

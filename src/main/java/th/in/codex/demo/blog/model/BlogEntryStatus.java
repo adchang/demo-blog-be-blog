@@ -1,4 +1,4 @@
-package th.in.codex.spring.demo_02_blog.model;
+package th.in.codex.demo.blog.model;
 
 public enum BlogEntryStatus {
   IN_PROGRESS,

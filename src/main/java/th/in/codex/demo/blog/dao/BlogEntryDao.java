@@ -1,8 +1,8 @@
-package th.in.codex.spring.demo_02_blog.dao;
+package th.in.codex.demo.blog.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import th.in.codex.spring.demo_02_blog.model.BlogEntry;
+import th.in.codex.demo.blog.model.BlogEntry;
 
 public interface BlogEntryDao extends JpaRepository<BlogEntry, Long>{
 

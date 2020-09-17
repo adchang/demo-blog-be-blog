@@ -1,4 +1,4 @@
-package th.in.codex.spring.demo_02_blog;
+package th.in.codex.demo.blog;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

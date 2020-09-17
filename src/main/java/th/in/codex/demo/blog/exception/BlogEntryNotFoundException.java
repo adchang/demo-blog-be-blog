@@ -1,4 +1,4 @@
-package th.in.codex.spring.demo_02_blog.exception;
+package th.in.codex.demo.blog.exception;
 
 public class BlogEntryNotFoundException extends RuntimeException {
 

@@ -1,4 +1,4 @@
-package th.in.codex.spring.demo_02_blog.controller;
+package th.in.codex.demo.blog.controller;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
@@ -16,9 +16,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import th.in.codex.spring.demo_02_blog.dao.BlogEntryDao;
-import th.in.codex.spring.demo_02_blog.exception.BlogEntryNotFoundException;
-import th.in.codex.spring.demo_02_blog.model.BlogEntry;
+import th.in.codex.demo.blog.dao.BlogEntryDao;
+import th.in.codex.demo.blog.exception.BlogEntryNotFoundException;
+import th.in.codex.demo.blog.model.BlogEntry;
 
 @RestController
 @RequestMapping(value = Uris.BLOG_ENTRY, produces = Uris.APP_JSON) 

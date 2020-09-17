@@ -1,4 +1,4 @@
-package th.in.codex.spring.demo_02_blog.controller;
+package th.in.codex.demo.blog.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-import th.in.codex.spring.demo_02_blog.exception.BlogEntryNotFoundException;
+import th.in.codex.demo.blog.exception.BlogEntryNotFoundException;
 
 @ControllerAdvice
 public class BlogEntryNotFoundAdvice {
