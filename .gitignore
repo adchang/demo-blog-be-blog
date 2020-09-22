@@ -1,3 +1,6 @@
+# mysql data files
+mysql/
+
 HELP.md
 log/
 target/

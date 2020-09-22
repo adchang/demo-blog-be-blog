@@ -3,6 +3,8 @@ package th.in.codex.demo.blog.model;
 import java.util.Objects;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
@@ -11,19 +13,19 @@ public class BlogEntry {
 
   private @Id @GeneratedValue Long id;
   private Long blogId;
-  private Long authorId;
+  private String authorId;
   private String title;
   private String body;
-  private BlogEntryStatus status;
+  private @Enumerated(EnumType.STRING) BlogEntryStatus status;
   // Labels
   
   public BlogEntry() {}
   
-  public BlogEntry(Long blogId, Long authorId, String title, String body) {
+  public BlogEntry(Long blogId, String authorId, String title, String body) {
     this(blogId, authorId, title, body, BlogEntryStatus.IN_PROGRESS);
   }
   
-  public BlogEntry(Long blogId, Long authorId, String title, String body, BlogEntryStatus status) {
+  public BlogEntry(Long blogId, String authorId, String title, String body, BlogEntryStatus status) {
     this.blogId = blogId;
     this.authorId = authorId;
     this.title = title;
@@ -47,11 +49,11 @@ public class BlogEntry {
     this.blogId = blogId;
   }
 
-  public Long getAuthorId() {
+  public String getAuthorId() {
     return authorId;
   }
   
-  public void setAuthorId(Long authorId) {
+  public void setAuthorId(String authorId) {
     this.authorId = authorId;
   }
   
@@ -96,3 +98,4 @@ public class BlogEntry {
     return obj.toString().equals(toString());
   }
 }
+

@@ -14,20 +14,21 @@ import th.in.codex.demo.blog.model.BlogEntryStatus;
 public class SeedData {
 
   private static final Logger log = LoggerFactory.getLogger(SeedData.class);
-
+/*
   @Bean
   // Note: All CommandLineRunner beans are executed upon application context load
   CommandLineRunner seedInitialData(BlogEntryDao blogEntryDao) {
 
     return args -> {
-      log.info("Preloading " + blogEntryDao.save(new BlogEntry(1L, 1L, "First Blog",
+      log.info("Preloading " + blogEntryDao.save(new BlogEntry(1L, "5f63735a76bda3058d8298b5", "First Blog",
           "Lorem Ipsum 1.1")));
-      log.info("Preloading " + blogEntryDao.save(new BlogEntry(1L, 2L, "First Blog",
+      log.info("Preloading " + blogEntryDao.save(new BlogEntry(1L, "5f637181b1304803f6b994dd", "First Blog",
           "Lorem Ipsum 1.2")));
-      log.info("Preloading " + blogEntryDao.save(new BlogEntry(1L, 1L, "First Blog",
+      log.info("Preloading " + blogEntryDao.save(new BlogEntry(1L, "5f63735a76bda3058d8298b5", "First Blog",
           "Lorem Ipsum 1.1 second")));
-      log.info("Preloading " + blogEntryDao.save(new BlogEntry(2L, 3L, "Second Blog",
+      log.info("Preloading " + blogEntryDao.save(new BlogEntry(2L, "BAD", "Second Blog",
           "Lorem Ipsum 2.3", BlogEntryStatus.PENDING_APPROVAL)));
     };
   }
+*/
 }

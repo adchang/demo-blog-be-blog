@@ -5,6 +5,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.EntityModel;
@@ -35,7 +36,7 @@ public class BlogEntryController {
 
   @GetMapping()
   CollectionModel<EntityModel<BlogEntry>> all() {
-    List<EntityModel<BlogEntry>> data = dao.findAll().stream()
+    List<EntityModel<BlogEntry>> data = StreamSupport.stream(dao.findAll().spliterator(), false)
         .map(assembler::toModel)
         .collect(Collectors.toList());
     
